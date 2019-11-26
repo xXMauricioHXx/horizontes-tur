@@ -1,0 +1,66 @@
+.container-fluid header {
+  padding: 0px;
+  margin: 0px;
+  background-image: url(/assets/imgs/5.jpg);
+  height: 100vh;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.container-fluid header section {
+  text-align: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.container-fluid header section h2 {
+  display: block;
+  color: #006616;
+  width: 100%;
+  font-size: 7rem;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  font-family: Satisfy-Regular;
+  padding: 15rem 0px 5rem 0px;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s;
+}
+
+.container-fluid header section span {
+  color: white;
+  background-color: #01468a;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  transition: 0.5s;
+  font-weight: bold;
+  -webkit-animation: slidein 3s;
+  -moz-animation: slidein 3s;
+  -ms-animation: slidein 3s;
+  animation: slidein 3s;
+}
+
+.container-fluid header section span:hover {
+  cursor: pointer;
+  background-color: #023261;
+}
+
+.about {
+  padding: 3rem 0px;
+  background-color: #f9f9f9;
+}
+
+.last-travel h2 {
+  text-align: center;
+  margin: 2rem;
+  font-weight: 900;
+}
+
+@media (max-width: 512px) {
+  .container-fluid header section h2 {
+    font-size: 4rem;
+    padding: 10rem 0px 5rem 0px;
+  }
+}

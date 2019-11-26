@@ -1,0 +1,23 @@
+footer {
+  background-color: #333;
+  height: 30vh;
+  color: #eee;
+}
+
+footer h6 {
+  padding-top: 2rem;
+  font-family: Lato-Regular;
+}
+
+footer ul {
+  margin-top: 2rem;
+}
+
+footer ul li {
+  display: block;
+  padding-top: 0.3rem;
+}
+
+footer ul li span {
+  font-weight: bold;
+}

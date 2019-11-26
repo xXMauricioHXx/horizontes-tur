@@ -1,0 +1,120 @@
+nav {
+  height: 80;
+  transition: 0.5s;
+  max-height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+nav .mobile {
+  position: absolute;
+  height: 200vh;
+  background-color: #fff;
+  right: -365px;
+  transition: 1s;
+}
+.mobile span {
+  margin-left: 1rem;
+}
+
+.menu-mobile li {
+  display: block;
+  border-bottom: 1px solid #f9f9f9;
+  text-align: left;
+  padding: 1rem 3rem;
+}
+
+.menu-mobile li i {
+  float: left;
+  padding: 0 2rem 0px 0px;
+  margin: -0.4rem;
+}
+
+.slidein-menu {
+  right: 0px !important;
+}
+
+nav i {
+  float: right;
+  font-size: 24pt !important;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+nav span {
+  display: block;
+  padding: 1.5rem 0px;
+  font-family: Satisfy-Regular;
+  color: #006616;
+  font-size: 14pt;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  font-weight: bold;
+}
+
+nav ul {
+  padding: 1.5rem 0px;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  font-family: Roboto-Bold;
+  padding-left: 3rem;
+  cursor: pointer;
+  padding: 1rem;
+  position: relative;
+}
+
+nav ul li a {
+  display: inline;
+  will-change: color;
+  transition: color 0.25s ease-out;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+ul li a:focus {
+  outline: 2px solid black;
+}
+
+ul li a::before,
+ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: black;
+
+  will-change: width;
+  transition: width 0.05s ease-out;
+
+  position: absolute;
+  bottom: 0;
+}
+
+ul li a::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ul li a::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.container-fluid header nav ul li a:hover::before,
+.container-fluid header nav ul li a:hover::after {
+  width: 100%;
+  transition-duration: 0.15s;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: black;
+}
